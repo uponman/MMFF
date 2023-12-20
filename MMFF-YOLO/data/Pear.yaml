@@ -1,0 +1,33 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC by University of Oxford
+# Example usage: python train.py --data VOC.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VOC  ← downloads here (2.8 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path:
+#train: ./VOCdevkit/train.txt  # train RGB images (relative to 'path')  16551 images
+#traind: ./VOCdevkit/train2.txt  # train Depth images
+#val: ./VOCdevkit/val.txt  # val RGB images (relative to 'path')  4952 images
+#vald: ./VOCdevkit/val2.txt
+#test: ./VOCdevkit/test.txt  # test images (optional)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path:
+train: F:/Dateset/RGB-Dpear/RGBD_Fusion_f/train250.txt  # train RGB images (relative to 'path')  16551 images
+traind: F:/Dateset/RGB-Dpear/RGBD_Fusion_f/train2502.txt  # train Depth images
+val: F:/Dateset/RGB-Dpear/RGBD_Fusion_f/val.txt  # val RGB images (relative to 'path')  4952 images
+vald: F:/Dateset/RGB-Dpear/RGBD_Fusion_f/val2.txt
+test: F:/Dateset/RGB-Dpear/RGBD_Fusion_f/test.txt  # test images (optional)
+
+# Classes
+names:
+  0: -NO-
+  1: -OL-
+  2: -OB-
+  3: -OF-
+
+
